@@ -36,4 +36,11 @@ def socket_bind():
 
 #establish a connection with a client (socket must be listening for dem)
 #line 30 needs to be there in order to listen before accepting
+#"you need to listen before accepting"
 def socket_accept():
+    conn, address = s.accept() #when you connect to a client
+    #conn = references the connection itsefl, (so the conversation)
+    #address = info of whoever connected
+    print("Connection has been established |" + "IP" + address[0] + " | Port" + str(address[0]))
+    send_commands(conn)
+    conn.close()
