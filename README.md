@@ -7,7 +7,7 @@ Author: Johnjimy Som <br/>
 Date: August 24, 2018<br/>
 Version: 0.0.1 <br/> <br/>
 
-                              This is only used for educational purposes do not use for anything else. Otherwise you will be punished and I told you so.
+This is only used for educational purposes do not use for anything else. Otherwise you will be punished and I told you so.
                               
                               Information:
                               1. First of all, Use this at your own risk. 
