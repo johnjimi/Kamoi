@@ -1,4 +1,9 @@
-#got em
+#got em, part 1
+#create sockets for computer to connect
+#author:johnjimy som
+#date: august 24, 2018
+#version: 0.0.1
+#objective: これはRSh Scriptのチュートリアルです. 
 
 import socket #two computer can communicate
 import sys # can run system commands
