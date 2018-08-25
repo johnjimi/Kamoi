@@ -3,7 +3,7 @@
 #author:johnjimy som
 #date: august 24, 2018
 #version: 0.0.1
-#objective: これはRSh Scriptのチュートリアルです. 
+#objective: これはRSh Scriptのチュートリアルです 
 
 import socket #two computer can communicate
 import sys # can run system commands
