@@ -3,11 +3,9 @@
 Python Study
 
 
-Author: Johnjimy Som
-
-Date: August 24, 2018
-
-Version: 0.0.1 
+Author: Johnjimy Som <br/>
+Date: August 24, 2018<br/>
+Version: 0.0.1 <br/>
                               This is only used for educational purposes do not use for anything else. Otherwise you will be punished and I told you so.
                               
                               Information:
