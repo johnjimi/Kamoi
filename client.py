@@ -1,7 +1,7 @@
 #connects to server and waits fi instrucitons
 #author:johnjimy som
 #date: august 24, 2018
-#version: 0.0.1
+#version: 0.0.2
 #objective: これはRSh Scriptのチュートリアルです. 
 
 import os #access the operating systems
