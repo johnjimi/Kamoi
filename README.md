@@ -1,9 +1,11 @@
 # Kamoi
 
 Python Study
+
+
 Author: Johnjimy Som
 Date: August 24, 2018
-Version: 0.0.1
+Version: 0.0.1 
                               This is only used for educational purposes do not use for anything else. Otherwise you will be punished and I told you so.
                               
                               Information:
