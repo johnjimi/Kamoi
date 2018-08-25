@@ -1,7 +1,14 @@
 # Kamoi
-Python
-                              This is only used for educational purposes do not use for anything else. Otherwise you will be punished.
+
+Python Study
+Author: Johnjimy Som
+Date: August 24, 2018
+Version: 0.0.1
+                              This is only used for educational purposes do not use for anything else. Otherwise you will be punished and I told you so.
                               
-                              
-                              -Final version will have the core py files removed.
-                              - IPs are dynamic so it is always changing.
+                              Information:
+                              1. First of all, Use this at your own risk. 
+                              2. If you don't know what this does, good for you. If not, google it. 
+                              3. IPs are dynamic so it is always changing.
+                              4. Run this locally.
+                              5. Have fun.
