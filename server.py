@@ -46,7 +46,7 @@ def socket_accept():
     conn, address = s.accept() #when you connect to a client
     #conn = references the connection itsefl, (so the conversation)
     #address = info of whoever connected
-    print("Connection has been established |" + "IP: " + address[0] + " | Port: " + str(address[0]))
+    print("Connection has been established |" + "IP: " + address[0] + " | Port: " + str(address[1]))
     send_commands(conn)
     conn.close()
 
