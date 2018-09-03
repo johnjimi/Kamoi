@@ -15,11 +15,12 @@ Version: 0.0.1 <br/> <br/>
                               4. Run this locally.
                               5. Have fun.
 <br/>                             
-- This is only used for educational purposes do not use for anything else. Otherwise you will be punished and I told you so.
+- This is only used for educational purposes do not use for anything else. Otherwise you will be punished and I told you so.<br/>
 - See more about this license @ http://www.wtfpl.net/
 <br/>
-                              DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE 
-                     TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
 
-                              0. You just DO WHAT THE FUCK YOU WANT TO.
+                             DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+                   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION 
+                              
+                              0.You just DO WHAT THE FUCK YOU WANT TO.
                               1. Use for education
