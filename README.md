@@ -1,4 +1,4 @@
-# Kamoi
+# kamoi
 
 Python Study
 
